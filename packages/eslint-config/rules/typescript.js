@@ -3,7 +3,7 @@ const { ERROR, OFF, WARN } = require('./_const')
 module.exports = {
   overrides: [
     {
-      files: ['**/*.ts?(x)'],
+      files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
       rules: {
         /**
@@ -77,7 +77,7 @@ module.exports = {
         // Don't mind if functions do not have return types.
         '@typescript-eslint/explicit-function-return-type': OFF,
 
-        // Variables must be used unless name starts with "ignored"
+        // Variables must be used unless name ends with "ignored"
         'no-unused-vars': OFF,
         '@typescript-eslint/no-unused-vars': [
           ERROR,
