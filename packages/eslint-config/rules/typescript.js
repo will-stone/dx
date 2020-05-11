@@ -40,7 +40,7 @@ module.exports = {
          */
 
         '@typescript-eslint/adjacent-overload-signatures': 'error',
-        '@typescript-eslint/ban-ts-ignore': 'error',
+        '@typescript-eslint/ban-ts-comment': 'error',
         '@typescript-eslint/ban-types': 'error',
         camelcase: 'off',
         '@typescript-eslint/camelcase': 'error',
@@ -90,6 +90,16 @@ module.exports = {
         // Require a consistent member declaration order
         '@typescript-eslint/member-ordering': ERROR,
 
+        // ❌
+        // interface T1 {
+        //  func(arg: string): number;
+        // }
+        // ✅
+        // interface T1 {
+        //  func: (arg: string) => number;
+        // }
+        '@typescript-eslint/method-signature-style': WARN,
+
         // Disallow duplicate class members
         '@typescript-eslint/no-dupe-class-members': ERROR,
 
@@ -97,12 +107,22 @@ module.exports = {
         // ✅ const bar = foo!.bar
         '@typescript-eslint/no-extra-non-null-assertion': WARN,
 
+        // Disallows usage of void type outside of generic or return types
+        '@typescript-eslint/no-invalid-void-type': ERROR,
+
+        // Disallow this keywords outside of classes or class-like objects
+        'no-invalid-this': OFF,
+        '@typescript-eslint/no-invalid-this': ERROR,
+
         // Aims to eliminate unused expressions which have no effect on the state of the program.
         'no-unused-expressions': OFF,
         '@typescript-eslint/no-unused-expressions': [ERROR],
 
         // Prefer using concise optional chain expressions instead of chained logical ands
         '@typescript-eslint/prefer-optional-chain': [WARN],
+
+        // Recommends using // @ts-expect-error over // @ts-ignore
+        '@typescript-eslint/prefer-ts-expect-error': WARN,
 
         // Use single quotes and disallow strings to use backticks
         quotes: 'off',
