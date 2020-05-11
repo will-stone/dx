@@ -9,16 +9,6 @@
   "license": "MIT",
   "author": "Will Stone",
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint . --ignore-path .gitignore --ignore-pattern '/samples/*'"
-  },
-  "prettier": "@will-stone/prettier-config",
-  "eslintConfig": {
-    "extends": [
-      "./index.js",
-      "./node.js"
-    ]
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
@@ -37,9 +27,6 @@
   },
   "devDependencies": {
     "@types/react": "^16.9.34",
-    "@will-stone/prettier-config": "^3.0.0",
-    "eslint": "^7.0.0",
-    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "typescript": "^3.8.3"
   },
