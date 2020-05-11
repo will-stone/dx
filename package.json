@@ -1,27 +1,42 @@
 {
   "name": "dx",
-  "description": "My shared configs and developer experience helpers for my projects",
-  "workspaces": [
-    "packages/*"
-  ],
   "private": true,
+  "description": "My shared configs and developer experience helpers for my projects",
   "repository": {
     "url": "https://github.com/will-stone/dx"
   },
-  "author": "Will Stone",
   "license": "MIT",
-  "prettier": "./packages/prettier-config/index.json",
-  "devDependencies": {
-    "eslint": "^7.0.0",
-    "prettier": "^2.0.5"
-  },
+  "author": "Will Stone",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "lint": "eslint ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "prettier": "./packages/prettier-config/index.json",
   "eslintConfig": {
     "extends": [
       "./packages/eslint-config/index.js",
       "./packages/eslint-config/node.js"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
   }
 }
