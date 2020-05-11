@@ -66,6 +66,10 @@ module.exports = {
     // deprecated new Buffer()
     'unicorn/no-new-buffer': WARN,
 
+    // Disallow the use of the null literal, to encourage using undefined instead.
+    // TODO [2020-07-01]: Not sure about this one yet, let's see how it goes and come back to this.
+    'unicorn/no-null': ERROR,
+
     // Extension to ESLint's no-process-exit rule, that allows process.exit() to
     // be called in files that start with a hashbang → #!/usr/bin/env node
     'unicorn/no-process-exit': ERROR,
@@ -104,6 +108,9 @@ module.exports = {
     // for {String,Array,TypedArray}#slice() and Array#splice()
     'unicorn/prefer-negative-index': WARN,
 
+    // Prefer Number static properties over global ones
+    'unicorn/prefer-number-properties': WARN,
+
     // Prefer Node#append() over Node#appendChild()
     'unicorn/prefer-node-append': WARN,
 
@@ -119,6 +126,10 @@ module.exports = {
 
     // Prefer String#replaceAll() over regex searches with the global flag
     'unicorn/prefer-replace-all': WARN,
+
+    // Prefer Set#has() over Array#includes() when checking for existence or non-existence
+    // Set#has() is faster than Array#includes().
+    'unicorn/prefer-set-has': WARN,
 
     // Prefer the spread operator over Array.from()
     'unicorn/prefer-spread': WARN,
