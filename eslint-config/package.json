@@ -1,0 +1,57 @@
+{
+  "name": "@will-stone/eslint-config",
+  "version": "1.2.1",
+  "private": false,
+  "description": "My ESLint config",
+  "repository": {
+    "url": "https://github.com/will-stone/dx"
+  },
+  "license": "MIT",
+  "author": "Will Stone",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ignore-path .gitignore --ignore-pattern '/samples/*'"
+  },
+  "prettier": "@will-stone/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "./index.js",
+      "./node.js"
+    ]
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "confusing-browser-globals": "^1.0.9",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.10.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "eslint-plugin-switch-case": "^1.1.2",
+    "eslint-plugin-unicorn": "^19.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@will-stone/prettier-config": "^3.0.0",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
