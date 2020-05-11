@@ -4,8 +4,10 @@ My shared configs and developer experience helpers for my projects.
 
 ## Configs
 
-- [ESLint Config](./packages/eslint-config)
-- [Prettier Config](./packages/prettier-config)
+- [ESLint Config](./packages/eslint-config), npm:
+  https://www.npmjs.com/package/@will-stone/eslint-config
+- [Prettier Config](./packages/prettier-config), npm:
+  https://www.npmjs.com/package/@will-stone/prettier-config
 
 ### Quick-setup
 
