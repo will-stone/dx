@@ -1823,7 +1823,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-packagejson@^2.1.2:
+prettier-plugin-packagejson@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.2.3.tgz#d69fb7a8dabc962a847e4c95b96d31de06282273"
   integrity sha512-iS/Xu9sVxzQ8FsHAdWdPM1AzcycJVacNgW8R1uHpoq7TISOhXRrq37QlnSi3BUTQqJLwnyFPSlu9Us5edkSiJg==
