@@ -74,6 +74,14 @@ module.exports = {
     // be called in files that start with a hashbang → #!/usr/bin/env node
     'unicorn/no-process-exit': ERROR,
 
+    // No reduce?
+    // TODO [2020-08-01] future me, how are you getting on with this?
+    'unicorn/no-reduce': ERROR,
+
+    // ❌ let foo = undefined;
+    // ✅ let foo;
+    'unicorn/no-useless-undefined': WARN,
+
     // Disallow [,, foo], use ignored vars instead
     'unicorn/no-unreadable-array-destructuring': ERROR,
 
@@ -116,6 +124,9 @@ module.exports = {
 
     // Prefer node.remove() over parentNode.removeChild(node) and parentElement.removeChild(node)
     'unicorn/prefer-node-remove': WARN,
+
+    // Prefer omitting the catch binding parameter
+    'unicorn/prefer-optional-catch-binding': WARN,
 
     // Prefer .querySelector() over .getElementById(),
     // .querySelectorAll() over .getElementsByClassName() and .getElementsByTagName()

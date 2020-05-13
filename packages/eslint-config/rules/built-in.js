@@ -230,7 +230,11 @@ module.exports = {
     'accessor-pairs': ERROR,
 
     // Enforces return statements in callbacks of array's methods
-    'array-callback-return': ERROR,
+    'array-callback-return': [
+      ERROR,
+      // To be compatible with unicorn/no-useless-undefined
+      { allowImplicit: true },
+    ],
 
     // Generates warnings when variables are used outside of the
     // block in which they were defined
