@@ -1,4 +1,4 @@
-const { ERROR, WARN } = require('./_const')
+const { ERROR, WARN, OFF } = require('./_const')
 
 module.exports = {
   rules: {
@@ -21,7 +21,10 @@ module.exports = {
     'import/export': ERROR,
 
     // When there is only a single export from a module,
-    // prefer using default export over named export.
-    'import/prefer-default-export': ERROR,
+    // this _would_ prefer using default export over named export, but it
+    // causes too many issues and it soons becomes tiresome with some tools
+    // requiring defaults and others forbidding them or requiring a certain
+    // named export.
+    'import/prefer-default-export': OFF,
   },
 }
