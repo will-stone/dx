@@ -122,8 +122,7 @@ module.exports = {
         '@typescript-eslint/prefer-optional-chain': [WARN],
 
         // Recommends using // @ts-expect-error over // @ts-ignore
-        // TODO [2020-06-01]: ts-expect doesn't exist yet, has ts 3.9 been released yet?
-        // '@typescript-eslint/prefer-ts-expect-error': WARN,
+        '@typescript-eslint/prefer-ts-expect-error': WARN,
 
         // Use single quotes and disallow strings to use backticks
         quotes: 'off',
