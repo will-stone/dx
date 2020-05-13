@@ -87,6 +87,13 @@ module.exports = {
         // Requires using T[] over Array<T> for arrays
         '@typescript-eslint/array-type': [WARN, { default: 'array' }],
 
+        'lines-between-class-members': OFF,
+        '@typescript-eslint/lines-between-class-members': [
+          WARN,
+          'always',
+          { exceptAfterOverload: true },
+        ],
+
         // Require a consistent member declaration order
         '@typescript-eslint/member-ordering': ERROR,
 
