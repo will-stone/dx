@@ -81,6 +81,10 @@ module.exports = {
     // Simple ternaries are okay
     'no-ternary': OFF,
 
+    // Allow undefined. Use no-global-assign and no-shadow-restricted-names
+    // rules to prevent undefined from being shadowed or assigned a different value.
+    'no-undefined': OFF,
+
     // Can cause conflicts with Prettier
     'no-unexpected-multiline': OFF,
 
@@ -638,9 +642,6 @@ module.exports = {
 
     // Disallow undeclared variables.
     'no-undef': ERROR,
-
-    // Prevent undefined from being overwritten.
-    'no-undefined': ERROR,
 
     // Disallow dangling underscores in identifiers.
     'no-underscore-dangle': ERROR,
