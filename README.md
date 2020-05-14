@@ -2,6 +2,14 @@
 
 My shared configs and developer experience helpers for my projects.
 
+## Fish Shell Functions
+
+My [custom functions](./packages/fish-functions) for the Fish Shell.
+
+```
+fisher add will-stone/dx/packages/fish-functions
+```
+
 ## Configs
 
 - [ESLint Config](./packages/eslint-config), npm:

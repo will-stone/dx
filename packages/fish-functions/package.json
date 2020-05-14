@@ -1,0 +1,7 @@
+{
+  "name": "fish-functions",
+  "private": true,
+  "description": "My custom functions for the Fish Shell",
+  "repository": "git@github.com:will-stone/fish-functions.git",
+  "license": "MIT"
+}
