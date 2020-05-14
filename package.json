@@ -11,7 +11,9 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release:eslint-config": "yarn workspace @will-stone/eslint-config publish",
+    "release:prettier-config": "yarn workspace @will-stone/eslint-config publish"
   },
   "husky": {
     "hooks": {
