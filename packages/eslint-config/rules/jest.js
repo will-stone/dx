@@ -16,10 +16,6 @@ module.exports = {
     // Tests shouldn't return anything
     'jest/no-test-return-statement': ERROR,
 
-    // Asserting toBeTruthy or toBeFalsy matches non-boolean values as well
-    // and encourages weaker tests
-    'jest/no-truthy-falsy': ERROR,
-
     // beforeEach, beforeAll, afterEach etc. should be at top of test block
     'jest/prefer-hooks-on-top': ERROR,
 
