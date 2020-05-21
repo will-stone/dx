@@ -42,33 +42,25 @@ module.exports = {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/ban-ts-comment': 'error',
         '@typescript-eslint/ban-types': 'error',
-        camelcase: 'off',
-        '@typescript-eslint/camelcase': 'error',
-        '@typescript-eslint/class-name-casing': 'error',
-        '@typescript-eslint/consistent-type-assertions': 'error',
-        '@typescript-eslint/interface-name-prefix': 'error',
-        '@typescript-eslint/member-delimiter-style': 'error',
+        '@typescript-eslint/explicit-module-boundary-types': 'warn',
         'no-array-constructor': 'off',
         '@typescript-eslint/no-array-constructor': 'error',
         'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-explicit-any': 'warn',
+        'no-extra-semi': 'off',
+        '@typescript-eslint/no-extra-semi': 'error',
         '@typescript-eslint/no-inferrable-types': 'error',
         '@typescript-eslint/no-misused-new': 'error',
         '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-non-null-assertion': 'warn',
         '@typescript-eslint/no-this-alias': 'error',
-        'no-use-before-define': 'off',
-        '@typescript-eslint/no-use-before-define': 'error',
         '@typescript-eslint/no-var-requires': 'error',
+        '@typescript-eslint/prefer-as-const': 'error',
         '@typescript-eslint/prefer-namespace-keyword': 'error',
         '@typescript-eslint/triple-slash-reference': 'error',
-        '@typescript-eslint/type-annotation-spacing': 'error',
-        'no-var': 'error',
-        'prefer-const': 'error',
-        'prefer-rest-params': 'error',
-        'prefer-spread': 'error',
 
         /**
          * Tweaks
@@ -126,7 +118,7 @@ module.exports = {
         '@typescript-eslint/no-unused-expressions': [ERROR],
 
         // Prefer using concise optional chain expressions instead of chained logical ands
-        '@typescript-eslint/prefer-optional-chain': [WARN],
+        '@typescript-eslint/prefer-optional-chain': ERROR,
 
         // Recommends using // @ts-expect-error over // @ts-ignore
         '@typescript-eslint/prefer-ts-expect-error': WARN,
