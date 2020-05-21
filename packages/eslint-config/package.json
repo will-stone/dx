@@ -28,11 +28,11 @@
   "devDependencies": {
     "@types/react": "^16.9.34",
     "react": "^16.13.1",
-    "typescript": "^3.9.0"
+    "typescript": "^3.9.3"
   },
   "peerDependencies": {
     "eslint": "^7.0.0",
-    "typescript": "^3.9.0"
+    "typescript": "^3.9.3"
   },
   "peerDependenciesMeta": {
     "typescript": {
