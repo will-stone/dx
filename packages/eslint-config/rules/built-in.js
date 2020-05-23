@@ -20,6 +20,10 @@ module.exports = {
     // Write comments however you like
     'capitalized-comments': OFF,
 
+    // Do not care how return statements specify values.
+    // When on, this rule gets annoying when combined with Unicorn's no-useless-* rules.
+    'consistent-return': OFF,
+
     // Disallows specified identifiers.
     // Maybe turn this on when it's obvious which identifiers do not make sense.
     // Rules like unicorn/catch-error-name look after some of these, anyway.
@@ -255,9 +259,6 @@ module.exports = {
     // source code. Not sure if this is required, defaults to 20 paths though so
     // should be ok.
     complexity: ERROR,
-
-    // Require return statements to always specify values
-    'consistent-return': ERROR,
 
     // Not sure if required
     'consistent-this': ERROR,
