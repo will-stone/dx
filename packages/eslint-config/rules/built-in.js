@@ -521,6 +521,10 @@ module.exports = {
     // the function creates a closure around the loop.
     'no-loop-func': ERROR,
 
+    // Disallow the use of number literals that immediately lose precision at
+    // runtime when converted to a JS Number due to 64-bit floating-point rounding.
+    'no-loss-of-precision': ERROR,
+
     // Disallow characters which are made with multiple code points in character class syntax.
     'no-misleading-character-class': ERROR,
 
