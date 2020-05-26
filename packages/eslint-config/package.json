@@ -10,8 +10,8 @@
   "author": "Will Stone",
   "main": "index.js",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/parser": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.0.1",
+    "@typescript-eslint/parser": "^3.0.1",
     "confusing-browser-globals": "^1.0.9",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
