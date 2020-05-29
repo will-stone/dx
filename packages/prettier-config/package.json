@@ -9,7 +9,7 @@
   "author": "Will Stone",
   "main": "index.json",
   "dependencies": {
-    "prettier-plugin-packagejson": "^2.2.4"
+    "prettier-plugin-packagejson": "^2.2.5"
   },
   "peerDependencies": {
     "prettier": "2.x"
