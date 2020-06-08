@@ -89,6 +89,9 @@ module.exports = {
         // Don't mind if functions do not have return types.
         '@typescript-eslint/explicit-function-return-type': OFF,
 
+        // Disallow non-null assertion in locations that may be confusing
+        '@typescript-eslint/no-confusing-non-null-assertion': WARN,
+
         // Variables must be used unless name ends with "ignored"
         'no-unused-vars': OFF,
         '@typescript-eslint/no-unused-vars': [
