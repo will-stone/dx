@@ -22,7 +22,7 @@ module.exports = {
 
     // When there is only a single export from a module,
     // this _would_ prefer using default export over named export, but it
-    // causes too many issues and it soons becomes tiresome with some tools
+    // causes too many issues and it soon becomes tiresome with some tools
     // requiring defaults and others forbidding them or requiring a certain
     // named export.
     'import/prefer-default-export': OFF,
