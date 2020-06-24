@@ -1,4 +1,4 @@
-const { ERROR } = require('./_const')
+const { ERROR, WARN } = require('./_const')
 
 module.exports = {
   rules: {
@@ -7,11 +7,21 @@ module.exports = {
     // describe -> it
     'jest/consistent-test-it': [ERROR, { fn: 'test', withinDescribe: 'it' }],
 
+    // Enforce it, test and describe to have descriptions that begin with a
+    // lowercase letter. This provides more readable test failures.
+    'jest/lowercase-name': WARN,
+
     // Consistent expect methods
     'jest/no-alias-methods': ERROR,
 
+    // Prevent calling expect conditionally
+    'jest/no-conditional-expect': ERROR,
+
     // Do not allow multiple beforeEach, for example
     'jest/no-duplicate-hooks': ERROR,
+
+    // No standalone expect in a describe block
+    'jest/no-standalone-expect': ERROR,
 
     // Tests shouldn't return anything
     'jest/no-test-return-statement': ERROR,
