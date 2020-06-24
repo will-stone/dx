@@ -136,6 +136,10 @@ module.exports = {
         'no-invalid-this': OFF,
         '@typescript-eslint/no-invalid-this': ERROR,
 
+        // Disallow literal numbers that lose precision
+        'no-loss-of-precision': OFF,
+        '@typescript-eslint/no-loss-of-precision': [ERROR],
+
         // Aims to eliminate unused expressions which have no effect on the state of the program.
         'no-unused-expressions': OFF,
         '@typescript-eslint/no-unused-expressions': [ERROR],

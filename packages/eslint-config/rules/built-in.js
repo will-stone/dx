@@ -657,6 +657,9 @@ module.exports = {
     // Disallow unreachable code after return, throw, continue, and break statements.
     'no-unreachable': ERROR,
 
+    // Disallow loops with a body that allows only one iteration
+    'no-unreachable-loop': ERROR,
+
     // Disallow control flow statements in finally blocks.
     'no-unsafe-finally': ERROR,
 
