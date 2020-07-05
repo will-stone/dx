@@ -67,7 +67,7 @@ module.exports = {
     'unicorn/no-new-buffer': WARN,
 
     // Disallow the use of the null literal, to encourage using undefined instead.
-    // TODO [2020-07-01]: Not sure about this one yet, let's see how it goes and come back to this.
+    // TODO [2020-09-01]: Not sure about this one yet, let's see how it goes and come back to this.
     'unicorn/no-null': ERROR,
 
     // Extension to ESLint's no-process-exit rule, that allows process.exit() to
