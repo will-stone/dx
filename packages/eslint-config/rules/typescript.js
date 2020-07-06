@@ -144,6 +144,9 @@ module.exports = {
         'no-unused-expressions': OFF,
         '@typescript-eslint/no-unused-expressions': [ERROR],
 
+        // Require that all enum members be literal values to prevent unintended enum member name shadow issues.
+        '@typescript-eslint/prefer-literal-enum-member': ERROR,
+
         // Prefer using concise optional chain expressions instead of chained logical ands
         '@typescript-eslint/prefer-optional-chain': ERROR,
 
