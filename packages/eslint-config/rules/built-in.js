@@ -27,7 +27,7 @@ module.exports = {
     // Disallows specified identifiers.
     // Maybe turn this on when it's obvious which identifiers do not make sense.
     // Rules like unicorn/catch-error-name look after some of these, anyway.
-    'id-blacklist': OFF,
+    'id-denylist': OFF,
 
     // Allow variables named with as little chars as you like
     'id-length': OFF,
@@ -70,6 +70,9 @@ module.exports = {
     // Let Prettier deal with this
     'no-mixed-operators': OFF,
 
+    // No export names are restricted
+    'no-restricted-exports': OFF,
+
     // No imports are restricted
     'no-restricted-imports': OFF,
 
@@ -91,6 +94,9 @@ module.exports = {
 
     // Can cause conflicts with Prettier
     'no-unexpected-multiline': OFF,
+
+    // Do I need this? https://eslint.org/docs/rules/no-useless-backreference
+    'no-useless-backreference': OFF,
 
     // Allow TODOs and FIXMEs
     'no-warning-comments': OFF,
@@ -269,6 +275,9 @@ module.exports = {
 
     // Require Default Case in Switch Statements
     'default-case': ERROR,
+
+    // enforce default clauses in switch statements to be last
+    'default-case-last': ERROR,
 
     // Putting default parameter at last allows function calls
     // to omit optional tail arguments.
@@ -584,6 +593,9 @@ module.exports = {
     // Because the unary ++ and -- operators are subject to automatic semicolon
     // insertion, differences in whitespace can change semantics of source code.
     'no-plusplus': ERROR,
+
+    // Disallow returning values from Promise executor functions
+    'no-promise-executor-return': ERROR,
 
     // __proto__ property has been deprecated as of ECMAScript 3.1 and shouldn't
     // be used in the code. Use Object.getPrototypeOf and Object.setPrototypeOf instead.

@@ -1,4 +1,4 @@
-const { WARN } = require('./_const')
+const { WARN, OFF } = require('./_const')
 
 module.exports = {
   rules: {
@@ -8,5 +8,8 @@ module.exports = {
       'always',
       { fallthrough: 'never' },
     ],
+
+    // It can be useful for switch cases to have their own scope.
+    'switch-case/no-case-curly': OFF,
   },
 }

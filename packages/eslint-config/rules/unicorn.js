@@ -2,6 +2,9 @@ const { ERROR, WARN, OFF } = require('./_const')
 
 module.exports = {
   rules: {
+    // Improve regexes by making them shorter, consistent, and safer
+    'unicorn/better-regex': WARN,
+
     // Catch error argument name should be "error"
     'unicorn/catch-error-name': ERROR,
 
@@ -70,6 +73,9 @@ module.exports = {
     // TODO [2020-09-01]: Not sure about this one yet, let's see how it goes and come back to this.
     'unicorn/no-null': ERROR,
 
+    // Disallow the use of objects as default parameters
+    'unicorn/no-object-as-default-parameter': ERROR,
+
     // Extension to ESLint's no-process-exit rule, that allows process.exit() to
     // be called in files that start with a hashbang → #!/usr/bin/env node
     'unicorn/no-process-exit': ERROR,
@@ -96,6 +102,9 @@ module.exports = {
 
     // Prefer .addEventListener() and .removeEventListener() over on-functions
     'unicorn/prefer-add-event-listener': WARN,
+
+    // Prefer .find(…) over the first element from .filter(…)
+    'unicorn/prefer-array-find': WARN,
 
     // Prefer using .dataset on DOM elements over .setAttribute(…)
     'unicorn/prefer-dataset': WARN,
@@ -174,6 +183,9 @@ module.exports = {
 
     // Enforce the use of regex shorthands to improve readability
     'unicorn/regex-shorthand': WARN,
+
+    // No swaps needed yet
+    'unicorn/string-content': OFF,
 
     // Require new when throwing an error
     'unicorn/throw-new-error': WARN,

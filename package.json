@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
+    "eslint-find-unused-rules": "yarn workspace @will-stone/eslint-config eslint-find-unused-rules",
     "release:eslint-config": "yarn workspace @will-stone/eslint-config publish",
     "release:prettier-config": "yarn workspace @will-stone/prettier-config publish"
   },
@@ -36,7 +37,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5"
