@@ -11,8 +11,8 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint .",
     "eslint-find-unused-rules": "yarn workspace @will-stone/eslint-config eslint-find-unused-rules",
+    "lint": "eslint .",
     "release:eslint-config": "yarn workspace @will-stone/eslint-config publish",
     "release:prettier-config": "yarn workspace @will-stone/prettier-config publish"
   },
@@ -35,6 +35,9 @@
       "./packages/eslint-config/index.js",
       "./packages/eslint-config/node.js"
     ]
+  },
+  "resolutions": {
+    "yargs": "^15.4.1"
   },
   "devDependencies": {
     "eslint": "^7.5.0",
