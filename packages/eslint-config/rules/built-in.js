@@ -9,116 +9,6 @@ const { ERROR, OFF, WARN } = require('./_const')
 
 module.exports = {
   rules: {
-    /**
-     * OFF
-     */
-
-    // Can cause issues when Prettier is enabled
-    'arrow-body-style': OFF,
-
-    // Write comments however you like
-    'capitalized-comments': OFF,
-
-    // Do not care how return statements specify values.
-    // When on, this rule gets annoying when combined with Unicorn's no-useless-* rules.
-    'consistent-return': OFF,
-
-    // Disallows specified identifiers.
-    // Maybe turn this on when it's obvious which identifiers do not make sense.
-    // Rules like unicorn/catch-error-name look after some of these, anyway.
-    'id-denylist': OFF,
-
-    // Allow variables named with as little chars as you like
-    'id-length': OFF,
-
-    // Requires identifiers to match a specified regular expression.
-    // Mainly covered by rules like "camelcase". This could probably cause more
-    // trouble than it's worth.
-    'id-match': OFF,
-
-    // Initialise vairables however you like
-    'init-declarations': OFF,
-
-    // Put lines between comments however you like
-    'lines-around-comment': OFF,
-
-    // Let prettier handle this and am not worried if Prettier does not deal with
-    // all strings. There may be occasions where long strings look better when
-    // then go over the 80 char limit; comments, for example.
-    'max-len': OFF,
-
-    // Files can contain as many lines as you like
-    'max-lines': OFF,
-
-    // Functions can be as complicated as you like
-    'max-lines-per-function': OFF,
-
-    // Enforces a maximum number of parameters allowed in function definitions.
-    // This is usually to help readability but TS self-documents this kind of thing.
-    'max-params': OFF,
-
-    // Statements can be as complicated as you like
-    'max-statements': OFF,
-
-    // Allow any style of multiline comments
-    'multiline-comment-style': OFF,
-
-    // Disallowing magic numbers causes all sorts of problems
-    'no-magic-numbers': OFF,
-
-    // Let Prettier deal with this
-    'no-mixed-operators': OFF,
-
-    // No export names are restricted
-    'no-restricted-exports': OFF,
-
-    // No imports are restricted
-    'no-restricted-imports': OFF,
-
-    // No properties are restricted
-    'no-restricted-properties': OFF,
-
-    // No syntax is restricted
-    'no-restricted-syntax': OFF,
-
-    // Tabs are handled by Prettier
-    'no-tabs': OFF,
-
-    // Simple ternaries are okay
-    'no-ternary': OFF,
-
-    // Allow undefined. Use no-global-assign and no-shadow-restricted-names
-    // rules to prevent undefined from being shadowed or assigned a different value.
-    'no-undefined': OFF,
-
-    // Can cause conflicts with Prettier
-    'no-unexpected-multiline': OFF,
-
-    // Do I need this? https://eslint.org/docs/rules/no-useless-backreference
-    'no-useless-backreference': OFF,
-
-    // Allow TODOs and FIXMEs
-    'no-warning-comments': OFF,
-
-    // Can cause issues when Prettier is enabled
-    'prefer-arrow-callback': OFF,
-
-    // Allow regex to be left as-is
-    'prefer-named-capture-group': OFF,
-
-    // Sorting imports is handled by simple-import-sort
-    'sort-imports': OFF,
-
-    // Allow object keys to be in any order
-    'sort-keys': OFF,
-
-    // Not required as one-var rule is set to ERROR and so there will never be vars to sort.
-    'sort-vars': OFF,
-
-    /**
-     * ERROR ******************************************************************
-     */
-
     // Enforces getter/setter pairs in objects and classes
     'accessor-pairs': ERROR,
 
@@ -129,12 +19,18 @@ module.exports = {
       { allowImplicit: true },
     ],
 
+    // Can cause issues when Prettier is enabled
+    'arrow-body-style': OFF,
+
     // Generates warnings when variables are used outside of the
     // block in which they were defined
     'block-scoped-var': ERROR,
 
     // camelCase vars
     camelcase: ERROR,
+
+    // Write comments however you like
+    'capitalized-comments': OFF,
 
     // If a class method does not use this,
     // it can sometimes be made into a static function
@@ -147,6 +43,10 @@ module.exports = {
 
     // Not sure if required
     'consistent-this': ERROR,
+
+    // Do not care how return statements specify values.
+    // When on, this rule gets annoying when combined with Unicorn's no-useless-* rules.
+    'consistent-return': OFF,
 
     // Constructors of derived classes must call super().
     // Constructors of non derived classes must not call super()
@@ -197,6 +97,25 @@ module.exports = {
     // from using a for in loop without filtering the results in the loop.
     'guard-for-in': ERROR,
 
+    // Disallows specified identifiers.
+    // Maybe turn this on when it's obvious which identifiers do not make sense.
+    // Rules like unicorn/catch-error-name look after some of these, anyway.
+    'id-denylist': OFF,
+
+    // Allow variables named with as little chars as you like
+    'id-length': OFF,
+
+    // Requires identifiers to match a specified regular expression.
+    // Mainly covered by rules like "camelcase". This could probably cause more
+    // trouble than it's worth.
+    'id-match': OFF,
+
+    // Initialise vairables however you like
+    'init-declarations': OFF,
+
+    // Put lines between comments however you like
+    'lines-around-comment': OFF,
+
     // Enforces line comments positioned above code
     'line-comment-position': ERROR,
 
@@ -212,12 +131,33 @@ module.exports = {
     // code complexity. Might turn this off it gets in the way too much.
     'max-depth': ERROR,
 
+    // Let prettier handle this and am not worried if Prettier does not deal with
+    // all strings. There may be occasions where long strings look better when
+    // then go over the 80 char limit; comments, for example.
+    'max-len': OFF,
+
+    // Files can contain as many lines as you like
+    'max-lines': OFF,
+
+    // Functions can be as complicated as you like
+    'max-lines-per-function': OFF,
+
     // This rule enforces a maximum depth that callbacks can be nested to
     // increase code clarity. Defaults to 10.
     'max-nested-callbacks': ERROR,
 
+    // Enforces a maximum number of parameters allowed in function definitions.
+    // This is usually to help readability but TS self-documents this kind of thing.
+    'max-params': OFF,
+
+    // Statements can be as complicated as you like
+    'max-statements': OFF,
+
     // Enforces maximum number of statements allowed per line to 1.
     'max-statements-per-line': ERROR,
+
+    // Allow any style of multiline comments
+    'multiline-comment-style': OFF,
 
     // Require constructor names to begin with a capital letter
     'new-cap': ERROR,
@@ -455,8 +395,14 @@ module.exports = {
     // runtime when converted to a JS Number due to 64-bit floating-point rounding.
     'no-loss-of-precision': ERROR,
 
+    // Disallowing magic numbers causes all sorts of problems
+    'no-magic-numbers': OFF,
+
     // Disallow characters which are made with multiple code points in character class syntax.
     'no-misleading-character-class': ERROR,
+
+    // Let Prettier deal with this
+    'no-mixed-operators': OFF,
 
     // const foo = bar = "baz"
     'no-multi-assign': ERROR,
@@ -531,8 +477,20 @@ module.exports = {
     // Disallow multiple spaces in regular expression literals.
     'no-regex-spaces': WARN,
 
+    // No export names are restricted
+    'no-restricted-exports': OFF,
+
     // Global variable names that are dangerous to use by mistake
     'no-restricted-globals': [ERROR, ...restrictedGlobals],
+
+    // No imports are restricted
+    'no-restricted-imports': OFF,
+
+    // No properties are restricted
+    'no-restricted-properties': OFF,
+
+    // No syntax is restricted
+    'no-restricted-syntax': OFF,
 
     // Disallow assignment in return statement
     'no-return-assign': ERROR,
@@ -571,8 +529,14 @@ module.exports = {
     // following the last element. Use ignored values instead.
     'no-sparse-arrays': ERROR,
 
+    // Tabs are handled by Prettier
+    'no-tabs': OFF,
+
     // Disallow template literal placeholder syntax in regular strings.
     'no-template-curly-in-string': ERROR,
+
+    // Simple ternaries are okay
+    'no-ternary': OFF,
 
     // Disallow use of this/super before calling super() in constructors.
     'no-this-before-super': ERROR,
@@ -586,6 +550,10 @@ module.exports = {
 
     // Disallow initializing to undefined.
     'no-undef-init': WARN,
+
+    // Allow undefined. Use no-global-assign and no-shadow-restricted-names
+    // rules to prevent undefined from being shadowed or assigned a different value.
+    'no-undefined': OFF,
 
     // Disallow dangling underscores in identifiers.
     'no-underscore-dangle': ERROR,
@@ -619,6 +587,9 @@ module.exports = {
     // Variables must be used unless name starts with "ignored"
     'no-unused-vars': [ERROR, { varsIgnorePattern: '[iI]gnored' }],
 
+    // Can cause conflicts with Prettier
+    'no-unexpected-multiline': OFF,
+
     // It's possible to use identifiers before their formal declarations in code.
     // This can be confusing and some believe it is best to always declare
     // variables and functions before using them.
@@ -628,6 +599,9 @@ module.exports = {
     // on the runtime behavior of a function. This can be confusing, so it's
     // better to disallow these redundant statements.
     'no-useless-return': WARN,
+
+    // Do I need this? https://eslint.org/docs/rules/no-useless-backreference
+    'no-useless-backreference': OFF,
 
     // Function.prototype.call() and Function.prototype.apply() are slower than
     // the normal function invocation.
@@ -654,14 +628,17 @@ module.exports = {
     // regular expressions doesn't have any effect.
     'no-useless-escape': ERROR,
 
-    // Require let or const instead of var.
-    'no-var': WARN,
-
     // Disallow renaming import, export, and destructured assignments to the same name.
     'no-useless-rename': ERROR,
 
+    // Require let or const instead of var.
+    'no-var': WARN,
+
     // Disallow use of the void operator.
     'no-void': ERROR,
+
+    // Allow TODOs and FIXMEs
+    'no-warning-comments': OFF,
 
     // The with statement is potentially problematic because it adds members of
     // an object to the current scope, making it impossible to tell what a
@@ -683,6 +660,9 @@ module.exports = {
       { blankLine: 'always', prev: 'multiline-block-like', next: '*' },
     ],
 
+    // Can cause issues when Prettier is enabled
+    'prefer-arrow-callback': OFF,
+
     // If a variable is never reassigned, using the const declaration is better.
     'prefer-const': WARN,
 
@@ -693,6 +673,9 @@ module.exports = {
     // alternative for the standard Math.pow function. Infix notation is
     // considered to be more readable and thus more preferable than the function notation.
     'prefer-exponentiation-operator': WARN,
+
+    // Allow regex to be left as-is
+    'prefer-named-capture-group': OFF,
 
     // This rule disallows calls to parseInt() or Number.parseInt() if called
     // with two arguments: a string; and a radix option of 2 (binary), 8 (octal),
@@ -747,6 +730,15 @@ module.exports = {
 
     // Disallow generator functions that do not have yield.
     'require-yield': ERROR,
+
+    // Sorting imports is handled by simple-import-sort
+    'sort-imports': OFF,
+
+    // Allow object keys to be in any order
+    'sort-keys': OFF,
+
+    // Not required as one-var rule is set to ERROR and so there will never be vars to sort.
+    'sort-vars': OFF,
 
     // All comments must have a space after the //
     // This also allows /// reference comments
