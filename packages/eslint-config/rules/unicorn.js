@@ -80,8 +80,7 @@ module.exports = {
     // be called in files that start with a hashbang → #!/usr/bin/env node
     'unicorn/no-process-exit': ERROR,
 
-    // No reduce?
-    // TODO [2020-08-01] future me, how are you getting on with this?
+    // for..of is much easier to read
     'unicorn/no-reduce': ERROR,
 
     // ❌ let foo = undefined;
@@ -92,7 +91,8 @@ module.exports = {
     'unicorn/no-unreadable-array-destructuring': ERROR,
 
     // Uses safe-regex to disallow potentially catastrophic exponential-time regular expressions.
-    'unicorn/no-unsafe-regex': ERROR,
+    // Turned off for now, even Sindre doesn't like it: https://github.com/sindresorhus/eslint-plugin-unicorn/issues/153
+    'unicorn/no-unsafe-regex': OFF,
 
     // Recommended config turned this off so I will too
     'unicorn/no-unused-properties': OFF,
