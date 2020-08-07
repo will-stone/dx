@@ -15,7 +15,6 @@ module.exports = {
 
     // Can cause issues when Prettier is enabled
     'arrow-body-style': OFF,
-    'prefer-arrow-callback': OFF,
 
     // Write comments however you like
     'capitalized-comments': OFF,
@@ -101,6 +100,9 @@ module.exports = {
     // Allow TODOs and FIXMEs
     'no-warning-comments': OFF,
 
+    // Can cause issues when Prettier is enabled
+    'prefer-arrow-callback': OFF,
+
     // Allow regex to be left as-is
     'prefer-named-capture-group': OFF,
 
@@ -114,130 +116,7 @@ module.exports = {
     'sort-vars': OFF,
 
     /**
-     * WARN
-     */
-
-    // never omit curly braces around blocks
-    curly: [WARN, 'all'],
-
-    // Access properties using the dot notation.
-    'dot-notation': WARN,
-
-    // Use === over ==
-    eqeqeq: WARN,
-
-    // Require an empty line between class members
-    'lines-between-class-members': WARN,
-
-    // Disallow arrow functions where they could be confused with comparisons.
-    'no-confusing-arrow': [WARN, { allowParens: false }],
-
-    // Disallow the use of console
-    'no-console': WARN,
-
-    // Require regex literals to escape division operators.
-    'no-div-regex': WARN,
-
-    // If an `if` block contains a return statement, the else block becomes
-    // unnecessary. Its contents can be placed outside of the block.
-    'no-else-return': WARN,
-
-    // Disallow unnecessary function binding
-    'no-extra-bind': WARN,
-
-    // In contexts such as an if statement's test where the result of the
-    // expression will already be coerced to a Boolean, casting to a Boolean via
-    // double negation (!!) or a Boolean call is unnecessary.
-    'no-extra-boolean-cast': WARN,
-
-    // If a loop contains no nested loops or switches, labeling the loop is unnecessary.
-    'no-extra-label': WARN,
-
-    // Disallow the type conversion with shorter notations.
-    'no-implicit-coercion': WARN,
-
-    // Disallow if statements as the only statement in else blocks.
-    'no-lonely-if': WARN,
-
-    // Disallow multiple spaces in regular expression literals.
-    'no-regex-spaces': WARN,
-
-    // Disallow initializing to undefined.
-    'no-undef-init': WARN,
-
-    // Disallow ternary operators when simpler alternatives exist.
-    'no-unneeded-ternary': WARN,
-
-    // Labels that are declared and not used anywhere in the code are most
-    // likely an error due to incomplete refactoring.
-    'no-unused-labels': WARN,
-
-    // A return; statement with nothing after it is redundant, and has no effect
-    // on the runtime behavior of a function. This can be confusing, so it's
-    // better to disallow these redundant statements.
-    'no-useless-return': WARN,
-
-    // Require let or const instead of var.
-    'no-var': WARN,
-
-    // Functions declared in object keys must conform to a certain style
-    // Capitalised functions are exempt as they are probably constructor functions
-    'object-shorthand': [WARN, 'always', { ignoreConstructors: true }],
-
-    // Prevent combined variable declarations
-    'one-var': [WARN, 'never'],
-
-    // Disallow assignment operator shorthand where possible.
-    'operator-assignment': [WARN, 'never'],
-
-    'padding-line-between-statements': [
-      WARN,
-      { blankLine: 'always', prev: 'multiline-block-like', next: '*' },
-    ],
-
-    // If a variable is never reassigned, using the const declaration is better.
-    'prefer-const': WARN,
-
-    // Make compatible with Unicorn's no-unreadable-array-destructuring
-    'prefer-destructuring': [WARN, { object: true, array: false }],
-
-    // Introduced in ES2016, the infix exponentiation operator ** is an
-    // alternative for the standard Math.pow function. Infix notation is
-    // considered to be more readable and thus more preferable than the function notation.
-    'prefer-exponentiation-operator': WARN,
-
-    // This rule disallows calls to parseInt() or Number.parseInt() if called
-    // with two arguments: a string; and a radix option of 2 (binary), 8 (octal),
-    // or 16 (hexadecimal).
-    'prefer-numeric-literals': WARN,
-
-    // Prefer use of an object spread over Object.assign()
-    'prefer-object-spread': WARN,
-
-    // Suggest using template literals instead of string concatenation.
-    'prefer-template': WARN,
-
-    // Use single quotes and disallow strings to use backticks
-    quotes: [
-      WARN,
-      'single',
-      { avoidEscape: true, allowTemplateLiterals: false },
-    ],
-
-    // All comments must have a space after the //
-    // This also allows /// reference comments
-    'spaced-comment': [WARN, 'always', { markers: ['/'] }],
-
-    // As modules are used nearly all of the time, this probably isn't required,
-    // but leaving it on just in case.
-    strict: WARN,
-
-    // ❌ if ('red' === color) {}
-    // ✅ if (color === 'red') {}
-    yoda: WARN,
-
-    /**
-     * ERROR
+     * ERROR ******************************************************************
      */
 
     // Enforces getter/setter pairs in objects and classes
@@ -273,6 +152,9 @@ module.exports = {
     // Constructors of non derived classes must not call super()
     'constructor-super': ERROR,
 
+    // never omit curly braces around blocks
+    curly: [WARN, 'all'],
+
     // Require Default Case in Switch Statements
     'default-case': ERROR,
 
@@ -282,6 +164,12 @@ module.exports = {
     // Putting default parameter at last allows function calls
     // to omit optional tail arguments.
     'default-param-last': ERROR,
+
+    // Access properties using the dot notation.
+    'dot-notation': WARN,
+
+    // Use === over ==
+    eqeqeq: WARN,
 
     // Enforce "for" loop update clause moving the counter in the right direction
     'for-direction': ERROR,
@@ -311,6 +199,9 @@ module.exports = {
 
     // Enforces line comments positioned above code
     'line-comment-position': ERROR,
+
+    // Require an empty line between class members
+    'lines-between-class-members': WARN,
 
     // Files containing multiple classes can often result in a less navigable
     // and poorly structuredcodebase. Best practice is to keep each file limited
@@ -379,6 +270,12 @@ module.exports = {
     // if (user.jobTitle = "manager") { }
     'no-cond-assign': ERROR,
 
+    // Disallow arrow functions where they could be confused with comparisons.
+    'no-confusing-arrow': [WARN, { allowParens: false }],
+
+    // Disallow the use of console
+    'no-console': WARN,
+
     // Disallow modifying variables that are declared using const
     'no-const-assign': ERROR,
 
@@ -410,6 +307,9 @@ module.exports = {
     // object. Using the delete operator on a variable might lead to unexpected
     // behavior.
     'no-delete-var': ERROR,
+
+    // Require regex literals to escape division operators.
+    'no-div-regex': WARN,
 
     // function foo(a, b, a) { } // duplicate "a" arg
     'no-dupe-args': ERROR,
@@ -448,6 +348,10 @@ module.exports = {
     // Combine named imports in single statement.
     'no-duplicate-imports': ERROR,
 
+    // If an `if` block contains a return statement, the else block becomes
+    // unnecessary. Its contents can be placed outside of the block.
+    'no-else-return': WARN,
+
     // Disallow empty block statements.
     'no-empty': ERROR,
 
@@ -473,6 +377,17 @@ module.exports = {
     // Disallow extending of native objects.
     'no-extend-native': ERROR,
 
+    // Disallow unnecessary function binding
+    'no-extra-bind': WARN,
+
+    // In contexts such as an if statement's test where the result of the
+    // expression will already be coerced to a Boolean, casting to a Boolean via
+    // double negation (!!) or a Boolean call is unnecessary.
+    'no-extra-boolean-cast': WARN,
+
+    // If a loop contains no nested loops or switches, labeling the loop is unnecessary.
+    'no-extra-label': WARN,
+
     // Disallow case statement fallthrough.
     'no-fallthrough': ERROR,
 
@@ -481,6 +396,9 @@ module.exports = {
 
     // Disallow assignment to native objects or read-only global variables.
     'no-global-assign': ERROR,
+
+    // Disallow the type conversion with shorter notations.
+    'no-implicit-coercion': WARN,
 
     // Disallow declarations in the global scope.
     'no-implicit-globals': ERROR,
@@ -525,6 +443,9 @@ module.exports = {
 
     // Disallow unnecessary nested blocks
     'no-lone-blocks': ERROR,
+
+    // Disallow if statements as the only statement in else blocks.
+    'no-lonely-if': WARN,
 
     // Writing functions within loops tends to result in errors due to the way
     // the function creates a closure around the loop.
@@ -607,6 +528,9 @@ module.exports = {
     // Disallow variable redeclaration.
     'no-redeclare': ERROR,
 
+    // Disallow multiple spaces in regular expression literals.
+    'no-regex-spaces': WARN,
+
     // Global variable names that are dangerous to use by mistake
     'no-restricted-globals': [ERROR, ...restrictedGlobals],
 
@@ -660,11 +584,17 @@ module.exports = {
     // Disallow undeclared variables.
     'no-undef': ERROR,
 
+    // Disallow initializing to undefined.
+    'no-undef-init': WARN,
+
     // Disallow dangling underscores in identifiers.
     'no-underscore-dangle': ERROR,
 
     // Disallow unmodified conditions of loops
     'no-unmodified-loop-condition': ERROR,
+
+    // Disallow ternary operators when simpler alternatives exist.
+    'no-unneeded-ternary': WARN,
 
     // Disallow unreachable code after return, throw, continue, and break statements.
     'no-unreachable': ERROR,
@@ -682,6 +612,10 @@ module.exports = {
     // indicates a logic error.
     'no-unused-expressions': ERROR,
 
+    // Labels that are declared and not used anywhere in the code are most
+    // likely an error due to incomplete refactoring.
+    'no-unused-labels': WARN,
+
     // Variables must be used unless name starts with "ignored"
     'no-unused-vars': [ERROR, { varsIgnorePattern: '[iI]gnored' }],
 
@@ -689,6 +623,11 @@ module.exports = {
     // This can be confusing and some believe it is best to always declare
     // variables and functions before using them.
     'no-use-before-define': ERROR,
+
+    // A return; statement with nothing after it is redundant, and has no effect
+    // on the runtime behavior of a function. This can be confusing, so it's
+    // better to disallow these redundant statements.
+    'no-useless-return': WARN,
 
     // Function.prototype.call() and Function.prototype.apply() are slower than
     // the normal function invocation.
@@ -715,6 +654,9 @@ module.exports = {
     // regular expressions doesn't have any effect.
     'no-useless-escape': ERROR,
 
+    // Require let or const instead of var.
+    'no-var': WARN,
+
     // Disallow renaming import, export, and destructured assignments to the same name.
     'no-useless-rename': ERROR,
 
@@ -725,6 +667,40 @@ module.exports = {
     // an object to the current scope, making it impossible to tell what a
     // variable inside the block actually refers to.
     'no-with': ERROR,
+
+    // Functions declared in object keys must conform to a certain style
+    // Capitalised functions are exempt as they are probably constructor functions
+    'object-shorthand': [WARN, 'always', { ignoreConstructors: true }],
+
+    // Prevent combined variable declarations
+    'one-var': [WARN, 'never'],
+
+    // Disallow assignment operator shorthand where possible.
+    'operator-assignment': [WARN, 'never'],
+
+    'padding-line-between-statements': [
+      WARN,
+      { blankLine: 'always', prev: 'multiline-block-like', next: '*' },
+    ],
+
+    // If a variable is never reassigned, using the const declaration is better.
+    'prefer-const': WARN,
+
+    // Make compatible with Unicorn's no-unreadable-array-destructuring
+    'prefer-destructuring': [WARN, { object: true, array: false }],
+
+    // Introduced in ES2016, the infix exponentiation operator ** is an
+    // alternative for the standard Math.pow function. Infix notation is
+    // considered to be more readable and thus more preferable than the function notation.
+    'prefer-exponentiation-operator': WARN,
+
+    // This rule disallows calls to parseInt() or Number.parseInt() if called
+    // with two arguments: a string; and a radix option of 2 (binary), 8 (octal),
+    // or 16 (hexadecimal).
+    'prefer-numeric-literals': WARN,
+
+    // Prefer use of an object spread over Object.assign()
+    'prefer-object-spread': WARN,
 
     // It is considered good practice to only pass instances of the built-in
     // Error object to the reject() function for user-defined errors in Promises.
@@ -741,6 +717,16 @@ module.exports = {
 
     // Suggest using spread syntax instead of `.apply()`.
     'prefer-spread': ERROR,
+
+    // Suggest using template literals instead of string concatenation.
+    'prefer-template': WARN,
+
+    // Use single quotes and disallow strings to use backticks
+    quotes: [
+      WARN,
+      'single',
+      { avoidEscape: true, allowTemplateLiterals: false },
+    ],
 
     // When using the parseInt() function it is common to omit the second argument,
     // the radix, and let the function try to determine from the first argument
@@ -762,6 +748,14 @@ module.exports = {
     // Disallow generator functions that do not have yield.
     'require-yield': ERROR,
 
+    // All comments must have a space after the //
+    // This also allows /// reference comments
+    'spaced-comment': [WARN, 'always', { markers: ['/'] }],
+
+    // As modules are used nearly all of the time, this probably isn't required,
+    // but leaving it on just in case.
+    strict: WARN,
+
     // Using description promotes easier debugging.
     // ✅ var foo = Symbol("some description")
     'symbol-description': ERROR,
@@ -777,5 +771,9 @@ module.exports = {
     // This rule forces the programmer to represent that behavior by manually
     // moving the variable declaration to the top of its containing scope.
     'vars-on-top': ERROR,
+
+    // ❌ if ('red' === color) {}
+    // ✅ if (color === 'red') {}
+    yoda: WARN,
   },
 }
