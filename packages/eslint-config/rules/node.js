@@ -36,5 +36,9 @@ module.exports = {
 
     // I like synchronous functions
     'node/no-sync': OFF,
+
+    // Not sure I need this...?
+    // TODO check others' configs to see how they use this.
+    'node/shebang': OFF,
   },
 }
