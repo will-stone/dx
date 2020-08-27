@@ -13,7 +13,7 @@
     "eslint-find-unused-rules": "eslint-find-rules --unused ./all.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.10.0",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "confusing-browser-globals": "^1.0.9",
     "eslint-config-prettier": "^6.11.0",
@@ -29,7 +29,7 @@
     "eslint-plugin-unicorn": "^21.0.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.46",
+    "@types/react": "^16.9.48",
     "eslint-find-rules": "^3.6.0",
     "react": "^16.13.1",
     "typescript": "^4.0.2"
