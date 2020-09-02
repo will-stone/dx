@@ -555,8 +555,8 @@ module.exports = {
     // rules to prevent undefined from being shadowed or assigned a different value.
     'no-undefined': OFF,
 
-    // Disallow dangling underscores in identifiers.
-    'no-underscore-dangle': ERROR,
+    // Allow dangling underscores in identifiers.
+    'no-underscore-dangle': OFF,
 
     // Disallow unmodified conditions of loops
     'no-unmodified-loop-condition': ERROR,
