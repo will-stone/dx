@@ -15,6 +15,9 @@ module.exports = {
     // Functional components can use any style.
     'react/function-component-definition': OFF,
 
+    // Allow as many components per file as you like
+    'react/no-multi-comp': OFF,
+
     // ❌ <div class="hello">Hello World</div>
     // ✅ <div className="hello">Hello World</div>
     'react/no-unknown-property': WARN,
