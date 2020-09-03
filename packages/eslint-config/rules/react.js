@@ -20,7 +20,7 @@ module.exports = {
     'react/no-unknown-property': WARN,
 
     // Require prop types.
-    'react/prop-types': ERROR,
+    'react/prop-types': OFF,
 
     // Do not enforce React components to have a shouldComponentUpdate method.
     'react/require-optimization': OFF,
