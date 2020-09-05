@@ -55,9 +55,8 @@ module.exports = {
     // Disallow unnecessary fragments.
     'react/jsx-no-useless-fragment': WARN,
 
-    // It is common to create wrappers around html elements and so prop spreading
-    // has been allowed for these but enabled on all other components.
-    'react/jsx-props-no-spreading': [ERROR, { html: 'ignore' }],
+    // Allow prop spreading, you know the dangers!
+    'react/jsx-props-no-spreading': OFF,
 
     // Alphabetical sorting of props
     'react/jsx-sort-props': [WARN, { reservedFirst: true }],
