@@ -37,9 +37,8 @@ module.exports = {
     'class-methods-use-this': ERROR,
 
     // Measures the number of linearly independent paths through a program's
-    // source code. Not sure if this is required, defaults to 20 paths though so
-    // should be ok.
-    complexity: ERROR,
+    // source code. Rubbish. Use your own judgement on complexity.
+    complexity: OFF,
 
     // Not sure if required
     'consistent-this': ERROR,
