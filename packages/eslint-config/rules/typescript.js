@@ -12,75 +12,75 @@ module.exports = {
          */
 
         // ts(2335) & ts(2377)
-        'constructor-super': 'off',
+        'constructor-super': OFF,
         // ts(2378)
-        'getter-return': 'off',
+        'getter-return': OFF,
         // ts(2588)
-        'no-const-assign': 'off',
+        'no-const-assign': OFF,
         // ts(2300)
-        'no-dupe-args': 'off',
+        'no-dupe-args': OFF,
         // ts(2393) & ts(2300)
-        'no-dupe-class-members': 'off',
+        'no-dupe-class-members': OFF,
         // ts(1117)
-        'no-dupe-keys': 'off',
+        'no-dupe-keys': OFF,
         // ts(2539)
-        'no-func-assign': 'off',
+        'no-func-assign': OFF,
         // ts(2539) & ts(2540)
-        'no-import-assign': 'off',
+        'no-import-assign': OFF,
         // ts(2588)
-        'no-new-symbol': 'off',
+        'no-new-symbol': OFF,
         // ts(2349)
-        'no-obj-calls': 'off',
+        'no-obj-calls': OFF,
         // ts(2451)
-        'no-redeclare': 'off',
+        'no-redeclare': OFF,
         // ts(2408)
-        'no-setter-return': 'off',
+        'no-setter-return': OFF,
         // ts(2376)
-        'no-this-before-super': 'off',
+        'no-this-before-super': OFF,
         // ts(2304)
-        'no-undef': 'off',
+        'no-undef': OFF,
         // ts(7027)
-        'no-unreachable': 'off',
+        'no-unreachable': OFF,
         // ts(2365) & ts(2360) & ts(2358)
-        'no-unsafe-negation': 'off',
+        'no-unsafe-negation': OFF,
         // ts transpiles let/const to var, so no need for vars any more
-        'no-var': 'error',
+        'no-var': ERROR,
         // ts provides better types with const
-        'prefer-const': 'error',
+        'prefer-const': ERROR,
         // ts provides better types with rest args over arguments
-        'prefer-rest-params': 'error',
+        'prefer-rest-params': ERROR,
         // ts transpiles spread to apply, so no need for manual apply
-        'prefer-spread': 'error',
+        'prefer-spread': ERROR,
         // ts(2367)
-        'valid-typeof': 'off',
+        'valid-typeof': OFF,
 
         /**
          * TS Recommended
-         * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/recommended.json
+         * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/recommended.ts
          */
 
-        '@typescript-eslint/adjacent-overload-signatures': 'error',
-        '@typescript-eslint/ban-ts-comment': 'error',
-        '@typescript-eslint/ban-types': 'error',
-        '@typescript-eslint/explicit-module-boundary-types': 'warn',
-        'no-array-constructor': 'off',
-        '@typescript-eslint/no-array-constructor': 'error',
-        'no-empty-function': 'off',
-        '@typescript-eslint/no-empty-function': 'error',
-        '@typescript-eslint/no-empty-interface': 'error',
-        '@typescript-eslint/no-explicit-any': 'warn',
-        'no-extra-semi': 'off',
-        '@typescript-eslint/no-extra-semi': 'error',
-        '@typescript-eslint/no-inferrable-types': 'error',
-        '@typescript-eslint/no-misused-new': 'error',
-        '@typescript-eslint/no-namespace': 'error',
-        '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
-        '@typescript-eslint/no-non-null-assertion': 'warn',
-        '@typescript-eslint/no-this-alias': 'error',
-        '@typescript-eslint/no-var-requires': 'error',
-        '@typescript-eslint/prefer-as-const': 'error',
-        '@typescript-eslint/prefer-namespace-keyword': 'error',
-        '@typescript-eslint/triple-slash-reference': 'error',
+        '@typescript-eslint/adjacent-overload-signatures': ERROR,
+        '@typescript-eslint/ban-ts-comment': ERROR,
+        '@typescript-eslint/ban-types': ERROR,
+        '@typescript-eslint/explicit-module-boundary-types': WARN,
+        'no-array-constructor': OFF,
+        '@typescript-eslint/no-array-constructor': ERROR,
+        'no-empty-function': OFF,
+        '@typescript-eslint/no-empty-function': ERROR,
+        '@typescript-eslint/no-empty-interface': ERROR,
+        '@typescript-eslint/no-explicit-any': WARN,
+        'no-extra-semi': OFF,
+        '@typescript-eslint/no-extra-semi': ERROR,
+        '@typescript-eslint/no-inferrable-types': ERROR,
+        '@typescript-eslint/no-misused-new': ERROR,
+        '@typescript-eslint/no-namespace': ERROR,
+        '@typescript-eslint/no-non-null-asserted-optional-chain': ERROR,
+        '@typescript-eslint/no-non-null-assertion': WARN,
+        '@typescript-eslint/no-this-alias': ERROR,
+        '@typescript-eslint/no-var-requires': ERROR,
+        '@typescript-eslint/prefer-as-const': ERROR,
+        '@typescript-eslint/prefer-namespace-keyword': ERROR,
+        '@typescript-eslint/triple-slash-reference': ERROR,
 
         /**
          * Tweaks
@@ -157,7 +157,7 @@ module.exports = {
         '@typescript-eslint/prefer-ts-expect-error': WARN,
 
         // Use single quotes and disallow strings to use backticks
-        quotes: 'off',
+        quotes: OFF,
         '@typescript-eslint/quotes': [
           WARN,
           'single',
