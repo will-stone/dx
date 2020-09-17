@@ -83,6 +83,25 @@ module.exports = {
         '@typescript-eslint/triple-slash-reference': ERROR,
 
         /**
+         * These are for type checking which I don't use eslint for
+         */
+        '@typescript-eslint/await-thenable': OFF,
+        '@typescript-eslint/no-floating-promises': OFF,
+        '@typescript-eslint/no-for-in-array': OFF,
+        '@typescript-eslint/no-implied-eval': OFF,
+        '@typescript-eslint/no-misused-promises': OFF,
+        '@typescript-eslint/no-unnecessary-type-assertion': OFF,
+        '@typescript-eslint/no-unsafe-assignment': OFF,
+        '@typescript-eslint/no-unsafe-call': OFF,
+        '@typescript-eslint/no-unsafe-member-access': OFF,
+        '@typescript-eslint/no-unsafe-return': OFF,
+        '@typescript-eslint/prefer-regexp-exec': OFF,
+        '@typescript-eslint/require-await': OFF,
+        '@typescript-eslint/restrict-plus-operands': OFF,
+        '@typescript-eslint/restrict-template-expressions': OFF,
+        '@typescript-eslint/unbound-method': OFF,
+
+        /**
          * Tweaks
          */
 
