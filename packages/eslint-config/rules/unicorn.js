@@ -174,8 +174,10 @@ module.exports = {
       WARN,
       {
         whitelist: {
+          getInitialProps: true,
           getStaticProps: true,
           props: true,
+          Props: true,
         },
       },
     ],
