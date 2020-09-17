@@ -70,7 +70,6 @@ module.exports = {
     'unicorn/no-new-buffer': WARN,
 
     // Disallow the use of the null literal, to encourage using undefined instead.
-    // TODO [2020-09-01]: Not sure about this one yet, let's see how it goes and come back to this.
     'unicorn/no-null': ERROR,
 
     // Disallow the use of objects as default parameters
