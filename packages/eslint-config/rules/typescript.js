@@ -99,6 +99,9 @@ module.exports = {
           { varsIgnorePattern: '[iI]gnored' },
         ],
 
+        'no-use-before-define': OFF,
+        '@typescript-eslint/no-use-before-define': [ERROR],
+
         // Requires using T[] over Array<T> for arrays
         '@typescript-eslint/array-type': [WARN, { default: 'array' }],
 
