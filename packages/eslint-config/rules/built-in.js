@@ -121,10 +121,8 @@ module.exports = {
     // Require an empty line between class members
     'lines-between-class-members': WARN,
 
-    // Files containing multiple classes can often result in a less navigable
-    // and poorly structuredcodebase. Best practice is to keep each file limited
-    // to a single responsibility.
-    'max-classes-per-file': ERROR,
+    // Organise classes how you see fit
+    'max-classes-per-file': OFF,
 
     // This rule enforces a maximum depth that blocks can be nested to reduce
     // code complexity. Might turn this off it gets in the way too much.
