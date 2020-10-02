@@ -48,6 +48,16 @@ module.exports = {
     // Unlimited JSX nesting.
     'react/jsx-max-depth': OFF,
 
+    // I haven't found any modern benchmarks for disallowing inline arrow
+    // functions, and quite frankly it feels like this "optimisation" is just
+    // people repeating sentiments from old blog posts.
+    'react/jsx-no-bind': [
+      ERROR,
+      {
+        allowArrowFunctions: true,
+      },
+    ],
+
     // ✅ <div>test</div>
     // ✅ <div>{'test'}</div>
     'react/jsx-no-literals': OFF,
