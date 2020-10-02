@@ -37,6 +37,9 @@ module.exports = {
     // Enforces importing index file with . instead of ./, ./index or ./index.js
     'unicorn/import-index': WARN,
 
+    // Not sure if this is useful yet
+    'unicorn/import-style': OFF,
+
     // Enforce the use of new for all builtins, except String, Number and Boolean
     'unicorn/new-for-builtins': WARN,
 
