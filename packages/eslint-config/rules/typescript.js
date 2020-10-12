@@ -111,6 +111,10 @@ module.exports = {
         // Disallow non-null assertion in locations that may be confusing
         '@typescript-eslint/no-confusing-non-null-assertion': WARN,
 
+        // Disallow duplicate imports
+        'no-duplicate-imports': 'off',
+        '@typescript-eslint/no-duplicate-imports': [ERROR],
+
         // Variables must be used unless name ends with "ignored"
         'no-unused-vars': OFF,
         '@typescript-eslint/no-unused-vars': [
