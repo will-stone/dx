@@ -36,9 +36,6 @@
       "./packages/eslint-config/node.js"
     ]
   },
-  "resolutions": {
-    "yargs": "^15.4.1"
-  },
   "devDependencies": {
     "eslint": "^7.11.0",
     "husky": "^4.3.0",
