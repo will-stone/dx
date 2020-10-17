@@ -998,10 +998,10 @@ eslint-plugin-switch-case@^1.1.2:
     lodash.last "^3.0.0"
     lodash.zipobject "^4.0.0"
 
-eslint-plugin-unicorn@^22.0.0:
-  version "22.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-22.0.0.tgz#46a93d8de393b865e04c2057a4ed3510864dd3be"
-  integrity sha512-jXPOauNiVFYLr+AeU3l21Ao+iDl/G08vUWui21RCI2L1TJIIoJvAMjMR6I+QPKr8FgIumzuR6gzDKCtEx2IkzA==
+eslint-plugin-unicorn@^23.0.0:
+  version "23.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-23.0.0.tgz#b2820212874735f9d91ecc8678b263ecfa6cf5f6"
+  integrity sha512-Vabo3cjl6cjyhcf+76CdQEY6suOFzK0Xh3xo0uL9VDYrDJP5+B6PjV0tHTYm82WZmFWniugFJM3ywHSNYTi/ZQ==
   dependencies:
     ci-info "^2.0.0"
     clean-regexp "^1.0.0"
@@ -2802,6 +2802,11 @@ type-fest@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
+
+typescript@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
+  integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
 
 uri-js@^4.2.2:
   version "4.2.2"

@@ -102,6 +102,9 @@ module.exports = {
     // Disallow number literals with zero fractions or dangling dots
     'unicorn/no-zero-fractions': WARN,
 
+    // Enforce the style of numeric separators by correctly grouping digits
+    'unicorn/numeric-separators-style': WARN,
+
     // Prefer .addEventListener() and .removeEventListener() over on-functions
     'unicorn/prefer-add-event-listener': WARN,
 
@@ -119,6 +122,9 @@ module.exports = {
 
     // Prefer .includes() over .indexOf() when checking for existence or non-existence
     'unicorn/prefer-includes': WARN,
+
+    // Enforce the use of Math.trunc instead of bitwise operators
+    'unicorn/prefer-math-trunc': WARN,
 
     // e.g. foo.insertBefore(baz, bar) -> foo.before(bar, 'baz')
     'unicorn/prefer-modern-dom-apis': WARN,
@@ -161,6 +167,9 @@ module.exports = {
 
     // Prefer String#slice() over String#substr() and String#substring()
     'unicorn/prefer-string-slice': WARN,
+
+    // Prefer ternary expressions over simple if-else statements
+    'unicorn/prefer-ternary': WARN,
 
     // Prefer .textContent over .innerText
     'unicorn/prefer-text-content': WARN,
