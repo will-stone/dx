@@ -1,5 +1,3 @@
-const { WARN } = require('./rules/_const')
-
 module.exports = {
   parserOptions: {
     sourceType: 'module',
@@ -30,6 +28,6 @@ module.exports = {
   ],
 
   rules: {
-    'prettier/prettier': WARN,
+    'prettier/prettier': 'warn',
   },
 }
