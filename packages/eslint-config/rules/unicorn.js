@@ -15,6 +15,9 @@ module.exports = {
     // Custom Error classes must conform to standard
     'unicorn/custom-error-definition': WARN,
 
+    // Enforce no spaces between braces
+    'unicorn/empty-brace-spaces': WARN,
+
     // Enforces a message value to be passed in when throwing built-in Error
     'unicorn/error-message': ERROR,
 
@@ -46,14 +49,14 @@ module.exports = {
     // Enforce specifying rules to disable in eslint-disable comments
     'unicorn/no-abusive-eslint-disable': ERROR,
 
-    // Require Array.isArray() instead of instanceof Array
-    'unicorn/no-array-instanceof': WARN,
+    // Allow passing a function reference directly to iterator methods
+    'unicorn/no-array-callback-reference': OFF,
+
+    // for..of is much easier to read
+    'unicorn/no-array-reduce': ERROR,
 
     // Do not use leading/trailing space between console.log parameters
     'unicorn/no-console-spaces': WARN,
-
-    // Allow passing a function reference directly to iterator methods
-    'unicorn/no-fn-reference-in-iterator': OFF,
 
     // Do not use a for loop that can be replaced with a for-of loop
     'unicorn/no-for-loop': WARN,
@@ -61,12 +64,19 @@ module.exports = {
     // Enforce the use of Unicode escapes instead of hexadecimal escapes
     'unicorn/no-hex-escape': WARN,
 
+    // Require Array.isArray() instead of instanceof Array
+    'unicorn/no-instanceof-array': WARN,
+
     // Disallow identifiers (var names) starting with new.
     // Do not check properties and allow "class" so that "className" is allowed.
     'unicorn/no-keyword-prefix': [
       ERROR,
       { blacklist: ['new'], checkProperties: false },
     ],
+
+    // This rule adds onto the built-in no-lonely-if rule, which only forbids if
+    // statements in else, not in if.
+    'unicorn/no-lonely-if': WARN,
 
     // Enforce the use of Buffer.from() and Buffer.alloc() instead of the
     // deprecated new Buffer()
@@ -81,9 +91,6 @@ module.exports = {
     // Extension to ESLint's no-process-exit rule, that allows process.exit() to
     // be called in files that start with a hashbang → #!/usr/bin/env node
     'unicorn/no-process-exit': ERROR,
-
-    // for..of is much easier to read
-    'unicorn/no-reduce': ERROR,
 
     // ❌ let foo = undefined;
     // ✅ let foo;
@@ -111,17 +118,36 @@ module.exports = {
     // Prefer .find(…) over the first element from .filter(…)
     'unicorn/prefer-array-find': WARN,
 
-    // Prefer using .dataset on DOM elements over .setAttribute(…)
-    'unicorn/prefer-dataset': WARN,
-
-    // Prefer KeyboardEvent#key over KeyboardEvent#keyCode
-    'unicorn/prefer-event-key': WARN,
-
     // Prefer .flatMap(…) over .map(…).flat()
-    'unicorn/prefer-flat-map': WARN,
+    'unicorn/prefer-array-flat-map': WARN,
+
+    // Prefer using Array#some over Array#find when ensuring at least one element
+    // in the array passes a given check.
+    'unicorn/prefer-array-some': ERROR,
+
+    // Prefer Date.now() to get the number of milliseconds since the Unix Epoch
+    'unicorn/prefer-date-now': WARN,
+
+    // Prefer default parameters over reassignment
+    'unicorn/prefer-default-parameters': WARN,
+
+    // Prefer Node#append() over Node#appendChild()
+    'unicorn/prefer-dom-node-append': WARN,
+
+    // Prefer using .dataset on DOM elements over .setAttribute(…)
+    'unicorn/prefer-dom-node-dataset': WARN,
+
+    // Prefer node.remove() over parentNode.removeChild(node) and parentElement.removeChild(node)
+    'unicorn/prefer-dom-node-remove': WARN,
+
+    // Prefer .textContent over .innerText
+    'unicorn/prefer-dom-node-text-content': WARN,
 
     // Prefer .includes() over .indexOf() when checking for existence or non-existence
     'unicorn/prefer-includes': WARN,
+
+    // Prefer KeyboardEvent#key over KeyboardEvent#keyCode
+    'unicorn/prefer-keyboard-event-key': WARN,
 
     // Enforce the use of Math.trunc instead of bitwise operators
     'unicorn/prefer-math-trunc': WARN,
@@ -136,12 +162,6 @@ module.exports = {
     // Prefer Number static properties over global ones
     'unicorn/prefer-number-properties': WARN,
 
-    // Prefer Node#append() over Node#appendChild()
-    'unicorn/prefer-node-append': WARN,
-
-    // Prefer node.remove() over parentNode.removeChild(node) and parentElement.removeChild(node)
-    'unicorn/prefer-node-remove': WARN,
-
     // Prefer omitting the catch binding parameter
     'unicorn/prefer-optional-catch-binding': WARN,
 
@@ -152,9 +172,6 @@ module.exports = {
     // Prefer Reflect.apply() over Function#apply()
     'unicorn/prefer-reflect-apply': WARN,
 
-    // Prefer String#replaceAll() over regex searches with the global flag
-    'unicorn/prefer-replace-all': WARN,
-
     // Prefer Set#has() over Array#includes() when checking for existence or non-existence
     // Set#has() is faster than Array#includes().
     'unicorn/prefer-set-has': WARN,
@@ -163,19 +180,19 @@ module.exports = {
     'unicorn/prefer-spread': WARN,
 
     // Prefer String#startsWith() & String#endsWith() over more complex alternatives
-    'unicorn/prefer-starts-ends-with': ERROR,
+    'unicorn/prefer-string-starts-ends-with': ERROR,
+
+    // Prefer String#replaceAll() over regex searches with the global flag
+    'unicorn/prefer-string-replace-all': WARN,
 
     // Prefer String#slice() over String#substr() and String#substring()
     'unicorn/prefer-string-slice': WARN,
 
+    // Prefer String#trimStart() / String#trimEnd() over String#trimLeft() / String#trimRight()
+    'unicorn/prefer-string-trim-start-end': WARN,
+
     // Prefer ternary expressions over simple if-else statements
     'unicorn/prefer-ternary': WARN,
-
-    // Prefer .textContent over .innerText
-    'unicorn/prefer-text-content': WARN,
-
-    // Prefer String#trimStart() / String#trimEnd() over String#trimLeft() / String#trimRight()
-    'unicorn/prefer-trim-start-end': WARN,
 
     // Enforce throwing TypeError in type checking conditions
     'unicorn/prefer-type-error': WARN,

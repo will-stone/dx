@@ -436,6 +436,9 @@ module.exports = {
     // new Number, or new Boolean.
     'no-new-wrappers': ERROR,
 
+    // Disallow \8 and \9 escape sequences in string literals
+    'no-nonoctal-decimal-escape': ERROR,
+
     // This rule disallows calling the Math, JSON, Reflect and Atomics objects as functions.
     'no-obj-calls': ERROR,
 
@@ -572,6 +575,9 @@ module.exports = {
 
     // Disallow negating the left operand of relational operators.
     'no-unsafe-negation': ERROR,
+
+    // Disallow use of optional chaining in contexts where the `undefined` value is not allowed
+    'no-unsafe-optional-chaining': ERROR,
 
     // An unused expression which has no effect on the state of the program
     // indicates a logic error.

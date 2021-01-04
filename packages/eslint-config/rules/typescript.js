@@ -86,6 +86,8 @@ module.exports = {
          * These are for type checking which I don't use eslint for
          */
         '@typescript-eslint/await-thenable': OFF,
+        '@typescript-eslint/dot-notation': OFF,
+        '@typescript-eslint/no-confusing-void-expression': OFF,
         '@typescript-eslint/no-floating-promises': OFF,
         '@typescript-eslint/no-for-in-array': OFF,
         '@typescript-eslint/no-implied-eval': OFF,
@@ -95,7 +97,10 @@ module.exports = {
         '@typescript-eslint/no-unsafe-call': OFF,
         '@typescript-eslint/no-unsafe-member-access': OFF,
         '@typescript-eslint/no-unsafe-return': OFF,
+        '@typescript-eslint/non-nullable-type-assertion-style': OFF,
+        '@typescript-eslint/prefer-readonly-parameter-types': OFF,
         '@typescript-eslint/prefer-regexp-exec': OFF,
+        '@typescript-eslint/promise-function-async': OFF,
         '@typescript-eslint/require-await': OFF,
         '@typescript-eslint/restrict-plus-operands': OFF,
         '@typescript-eslint/restrict-template-expressions': OFF,
@@ -170,6 +175,9 @@ module.exports = {
         'no-unused-expressions': OFF,
         '@typescript-eslint/no-unused-expressions': [ERROR],
 
+        // Disallows unnecessary constraints on generic types
+        '@typescript-eslint/no-unnecessary-type-constraint': WARN,
+
         // Require that all enum members be literal values to prevent unintended enum member name shadow issues.
         '@typescript-eslint/prefer-literal-enum-member': ERROR,
 
@@ -186,6 +194,12 @@ module.exports = {
           'single',
           { avoidEscape: true, allowTemplateLiterals: false },
         ],
+
+        '@typescript-eslint/sort-type-union-intersection-members': WARN,
+
+        // This rule is aimed at ensuring there are spaces around infix operators.
+        'space-infix-ops': 'off',
+        '@typescript-eslint/space-infix-ops': ['warn', { int32Hint: false }],
 
         /**
          * REACT tweaks
