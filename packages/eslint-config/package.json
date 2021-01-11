@@ -13,8 +13,8 @@
     "eslint-find-unused-rules": "eslint-find-rules --unused ./all.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.12.0",
-    "@typescript-eslint/parser": "^4.12.0",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
     "confusing-browser-globals": "^1.0.9",
     "eslint-config-prettier": "^6.13.0",
     "eslint-plugin-import": "^2.22.1",
