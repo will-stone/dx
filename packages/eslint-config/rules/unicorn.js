@@ -6,6 +6,9 @@ module.exports = {
     // Catch error argument name should be "error"
     'unicorn/catch-error-name': 'error',
 
+    // Use destructured variables over properties
+    'unicorn/consistent-destructuring': 'warn',
+
     // I like nested arrow fns and this can mess with those
     // This would error: () => dispatch => setTimeout(() => dispatch(action), 500)
     'unicorn/consistent-function-scoping': 'off',
@@ -76,6 +79,9 @@ module.exports = {
     // statements in else, not in if.
     'unicorn/no-lonely-if': 'warn',
 
+    // Disallow new Array()
+    'unicorn/no-new-array': 'warn',
+
     // Enforce the use of Buffer.from() and Buffer.alloc() instead of the
     // deprecated new Buffer()
     'unicorn/no-new-buffer': 'warn',
@@ -118,6 +124,9 @@ module.exports = {
 
     // Prefer .flatMap(…) over .map(…).flat()
     'unicorn/prefer-array-flat-map': 'warn',
+
+    // Prefer Array#indexOf() over Array#findIndex() when looking for the index of an item
+    'unicorn/prefer-array-index-of': 'warn',
 
     // Prefer using Array#some over Array#find when ensuring at least one element
     // in the array passes a given check.
@@ -169,6 +178,9 @@ module.exports = {
 
     // Prefer Reflect.apply() over Function#apply()
     'unicorn/prefer-reflect-apply': 'warn',
+
+    // Prefer RegExp#test() over String#match() and RegExp#exec()
+    'unicorn/prefer-regexp-test': 'warn',
 
     // Prefer Set#has() over Array#includes() when checking for existence or non-existence
     // Set#has() is faster than Array#includes().
