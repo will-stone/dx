@@ -53,6 +53,12 @@ module.exports = {
     // Allow passing a function reference directly to iterator methods
     'unicorn/no-array-callback-reference': 'off',
 
+    // Prefer for…of over Array#forEach(…)
+    'unicorn/no-array-for-each': 'warn',
+
+    // Enforce combining multiple Array#push() into one call
+    'unicorn/no-array-push-push': 'warn',
+
     // for..of is much easier to read
     'unicorn/no-array-reduce': 'error',
 
@@ -95,6 +101,9 @@ module.exports = {
     // Extension to ESLint's no-process-exit rule, that allows process.exit() to
     // be called in files that start with a hashbang → #!/usr/bin/env node
     'unicorn/no-process-exit': 'error',
+
+    // Disallow assigning this to a variable
+    'unicorn/no-this-assignment': 'error',
 
     // ❌ let foo = undefined;
     // ✅ let foo;

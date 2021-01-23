@@ -10,7 +10,7 @@
   "author": "Will Stone",
   "main": "index.js",
   "scripts": {
-    "eslint-find-unused-rules": "eslint-find-rules --unused ./all.js"
+    "eslint-find-unused-rules": "npx eslint-find-rules --unused ./all.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.13.0",
@@ -26,10 +26,7 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-simple-import-sort": "^5.0.3",
     "eslint-plugin-switch-case": "^1.1.2",
-    "eslint-plugin-unicorn": "^26.0.0"
-  },
-  "devDependencies": {
-    "eslint-find-rules": "^3.6.1"
+    "eslint-plugin-unicorn": "^27.0.0"
   },
   "peerDependencies": {
     "eslint": "^7.17.0",
