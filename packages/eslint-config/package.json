@@ -1,6 +1,6 @@
 {
   "name": "@will-stone/eslint-config",
-  "version": "1.31.0",
+  "version": "1.32.0",
   "private": false,
   "description": "My ESLint config",
   "repository": {
