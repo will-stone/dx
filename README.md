@@ -47,7 +47,7 @@ Package.json:
 }
 ```
 
-You may need to `npm i` again to setup Husky. Then run:
+Then run the following to setup the Husky git-hook:
 
 ```bash
 npx husky add .husky/pre-commit "npx --no lint-staged"
