@@ -14,7 +14,7 @@ My shared configs and developer experience helpers for my projects.
 Run:
 
 ```bash
-yarn add -D eslint @will-stone/eslint-config prettier @will-stone/prettier-config husky pinst lint-staged
+npm i -D eslint @will-stone/eslint-config prettier @will-stone/prettier-config husky pinst lint-staged
 ```
 
 Package.json:
@@ -47,8 +47,8 @@ Package.json:
 }
 ```
 
-You may need to `npm i` again to setup Husky. Then create a `.husky/pre-commit` file:
+You may need to `npm i` again to setup Husky. Then run:
 
-```
-npx --no lint-staged
+```bash
+npx husky add .husky/pre-commit "npx --no lint-staged"
 ```
