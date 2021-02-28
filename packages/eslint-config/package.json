@@ -8,28 +8,27 @@
   },
   "license": "MIT",
   "author": "Will Stone",
-  "main": "index.js",
   "scripts": {
-    "eslint-find-unused-rules": "npx eslint-find-rules --unused ./all.js"
+    "eslint-find-unused-rules": "npx eslint-find-rules --unused ./javascript.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.13.0",
-    "@typescript-eslint/parser": "^4.13.0",
-    "confusing-browser-globals": "^1.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "confusing-browser-globals": "^1.0.10",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.3",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-jest": "^24.1.5",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.1.2",
-    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-switch-case": "^1.1.2",
-    "eslint-plugin-unicorn": "^27.0.0"
+    "eslint-plugin-unicorn": "^28.0.2"
   },
   "peerDependencies": {
-    "eslint": "^7.17.0",
+    "eslint": "^7.21.0",
     "typescript": "^4.1.3"
   },
   "peerDependenciesMeta": {

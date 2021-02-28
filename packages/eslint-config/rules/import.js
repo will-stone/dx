@@ -8,7 +8,8 @@ module.exports = {
     'import/newline-after-import': 'warn',
 
     // Sort all the imports!
-    'simple-import-sort/sort': 'warn',
+    'simple-import-sort/imports': 'warn',
+    'simple-import-sort/exports': 'warn',
 
     /**
      * 'error'
