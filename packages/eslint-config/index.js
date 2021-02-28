@@ -24,7 +24,6 @@ module.exports = {
       './rules/unicorn',
     ].map(require.resolve),
     'prettier',
-    'prettier/unicorn',
   ],
 
   rules: {
