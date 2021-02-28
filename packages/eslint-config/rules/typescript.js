@@ -198,13 +198,6 @@ module.exports = {
         // This rule is aimed at ensuring there are spaces around infix operators.
         'space-infix-ops': 'off',
         '@typescript-eslint/space-infix-ops': ['warn', { int32Hint: false }],
-
-        /**
-         * REACT tweaks
-         */
-
-        // No need for prop types when using TS.
-        'react/prop-types': 'off',
       },
     },
   ],

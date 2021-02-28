@@ -4,12 +4,10 @@ My shared configs and developer experience helpers for my projects.
 
 ## Configs
 
-- [ESLint Config](./packages/eslint-config), npm:
-  https://www.npmjs.com/package/@will-stone/eslint-config
-- [Prettier Config](./packages/prettier-config), npm:
-  https://www.npmjs.com/package/@will-stone/prettier-config
+- ESLint Config: https://www.npmjs.com/package/@will-stone/eslint-config
+- Prettier Config: https://www.npmjs.com/package/@will-stone/prettier-config
 
-### Quick-setup
+### Quick Setup
 
 Run:
 
@@ -28,15 +26,15 @@ Package.json:
     "postpublish": "pinst --enable"
   },
   "eslintConfig": {
-    // eslint-config is the base JS config and should always be included.
-    // The other configs can be used where appropriate.
     "extends": [
-      "@will-stone/eslint-config",
-      "@will-stone/eslint-config/node",
+      // There are two base configs to choose from.
+      "@will-stone/eslint-config/javascript",
+      "@will-stone/eslint-config/typescript",
+
+      // You can then add the specific linting configs for the tools you are using
       "@will-stone/eslint-config/react",
-      "@will-stone/eslint-config/jest",
-      // If using TS and React, make sure TS config is included after React config.
-      "@will-stone/eslint-config/typescript"
+      "@will-stone/eslint-config/node",
+      "@will-stone/eslint-config/jest"
     ]
   },
   "prettier": "@will-stone/prettier-config",

@@ -15,5 +15,6 @@ module.exports = {
     'plugin:react/all',
     'plugin:jsx-a11y/recommended',
     ...['./rules/react'].map(require.resolve),
+    'prettier',
   ],
 }

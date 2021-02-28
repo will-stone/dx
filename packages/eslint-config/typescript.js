@@ -1,5 +1,8 @@
 module.exports = {
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['@typescript-eslint'],
 
-  extends: [...['./rules/typescript'].map(require.resolve), 'prettier'],
+  extends: [
+    ...['./javascript', './rules/typescript'].map(require.resolve),
+    'prettier',
+  ],
 }

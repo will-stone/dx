@@ -11,10 +11,10 @@
     "packages/*"
   ],
   "scripts": {
-    "eslint-find-unused-rules": "yarn workspace @will-stone/eslint-config eslint-find-unused-rules",
+    "eslint-find-unused-rules": "cd ./packages/eslint-config && npm run eslint-find-unused-rules",
     "lint": "eslint .",
-    "release:eslint-config": "yarn workspace @will-stone/eslint-config publish",
-    "release:prettier-config": "yarn workspace @will-stone/prettier-config publish"
+    "release:eslint-config": "cd ./packages/eslint-config && npm publish",
+    "release:prettier-config": "cd ./packages/prettier-config && npm publish"
   },
   "husky": {
     "hooks": {
@@ -32,7 +32,7 @@
   "prettier": "./packages/prettier-config/index.json",
   "eslintConfig": {
     "extends": [
-      "./packages/eslint-config/index.js",
+      "./packages/eslint-config/javascript.js",
       "./packages/eslint-config/node.js"
     ]
   },
