@@ -12,14 +12,10 @@
   ],
   "scripts": {
     "eslint-find-unused-rules": "cd ./packages/eslint-config && npm run eslint-find-unused-rules",
+    "postinstall": "husky install",
     "lint": "eslint .",
     "release:eslint-config": "cd ./packages/eslint-config && npm publish",
     "release:prettier-config": "cd ./packages/prettier-config && npm publish"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{css,json,md}": [
@@ -37,7 +33,7 @@
     ]
   },
   "devDependencies": {
-    "husky": "^4.3.0",
-    "lint-staged": "^10.4.2"
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4"
   }
 }
